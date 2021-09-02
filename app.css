@@ -49,16 +49,24 @@ table {
 
 /* end meyer reset */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 body {
     height: 100vh;
     width: 120vh;
     background-color: #ffffbd;
+    font-family: Roboto, sans-serif;
 }
 
 header {
     padding-top: 1rem;
     padding-bottom: 2rem;
     background-color: rgb(253, 253, 219);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 #logo {
@@ -66,6 +74,19 @@ header {
     font-weight: 900;
     margin-top: 1rem;
     margin-left: 1rem;
+}
+
+nav {
+    margin-right: 2rem;
+}
+
+nav > a {
+    margin-right: 0.5rem;
+    color: inherit;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .loading {
@@ -81,6 +102,7 @@ header {
 .pokemon-container {
     display: flex;
     flex-wrap: wrap;
+    font-family: Roboto, sans-serif;
 }
 
 .pokemon-card {
@@ -90,6 +112,7 @@ header {
     justify-content: space-between;
     box-shadow: 3px 3px 8px rgb(169 169 169);
     margin: 2rem;
+    font-family: Roboto, sans-serif;
 }
 
 .pokemon-card > h2 {
@@ -99,6 +122,9 @@ header {
     margin-right: 0.5rem;
     margin-top: 0.5rem;
     text-align: center;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .pokemon-card > img {
