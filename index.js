@@ -22,7 +22,7 @@ function removeLoadingGif() {
 
 function showPokemon(pokemon) {
     const pokemonCard = createPokemonCard();
-    const pokemonName = createPokemonCard(pokemon);
+    const pokemonName = createPokemonName(pokemon);
     const pokemonImage = createPokemonImage(pokemon);
 
     pokemonCard.append(pokemonName, pokemonImage);
@@ -37,7 +37,7 @@ function createPokemonCard() {
 
 function createPokemonName({ name }) {
     const pokemonName = document.createElement('h2');
-    pokemonName.textContent = name;
+    pokemonName.textContent = name.toUpperCase();
     return pokemonName;
 }
 
@@ -46,7 +46,6 @@ function createPokemonImage({ sprites }) {
     pokemonImage.src = sprites.other["official-artwork"].front_default;
     return pokemonImage;
 }
-
 
 function parseJSON(response) {
     return response.json();
